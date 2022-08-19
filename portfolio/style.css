@@ -1,0 +1,174 @@
+*{
+ margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif,'Open Sans', sans-serif;
+}
+
+
+.port > h1{
+    font-size: 30px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    color: red;
+    cursor: pointer;
+}
+
+.port > h1:hover{
+    color: whitesmoke;
+}
+
+li{
+    position: static;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0px 0px 100px;
+    padding: 10px;
+}
+
+li:hover{
+    transform: scale(1.5);
+    transition: 250ms;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+a:hover{
+ color: red;
+ cursor: pointer;
+}
+
+.head{
+    background-image: url(web.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 500px;
+}
+
+main{
+    height: 400px;
+    background-color: whitesmoke;
+    padding: 12px;
+}
+
+article{
+    font-size: 25px;
+    letter-spacing: 1px;
+    overflow-wrap: break-word;
+    width: 60%;
+}
+
+.input-mail{
+    height: 45px;
+    width: 30%;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    background-color: black;
+    color: white;
+}
+
+.btn-inside{
+    position: relative;
+    left: -125px;
+    height: 42px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    background-color:  red;
+    color: white;
+}
+
+.btn-inside:hover{
+    transform: scale(1.2);
+    transition: 250ms;
+    cursor: pointer;
+    color: black;
+}
+
+span{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+footer{
+   font-family:  'Montserrat', sans-serif,'Open Sans', sans-serif;
+    background-color: black;
+}
+
+.social{
+    color: red;
+    text-align: center;
+    height: 200px;
+}
+
+.foot{
+    color: white;
+}
+
+h2{
+    font-size: 35px;
+    padding: 20px;
+    text-align: center;
+    color: red;
+    cursor: pointer;
+}
+
+h2:hover{
+    color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 250ms;
+}
+
+ol{
+    color: white;
+    text-align: center;
+}
+
+.link{
+    position: relative;
+    left: 85%;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0;
+    font-size: 25px;
+}
+
+.link:hover{
+    color: red;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropContent{
+    position: absolute;
+    left: 85%;
+    top: calc(100% + .25rem);
+    background-color: whitesmoke;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown > .link:focus + .dropContent{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
